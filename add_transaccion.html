@@ -1,0 +1,36 @@
+<html>
+  <body>
+    <h1>TRANSACCIONES</h1>
+    <form id="form-saldo">                    
+      <div id="resultadoSaldo-div"></div>
+    </form>
+    <form id="form-sumEgreso">                    
+      <div id="resultadoEgreso-div"></div>
+    </form>
+    <form id="form-sumIngreso">                    
+      <div id="resultadoIngreso-div"></div>
+    </form>
+    
+    <h2>Añadir transaccion</h2>    
+    <form id="form-Egreso">                    
+      <label for="Tipo-transaccion" >Egreso: </label>    
+      <label type="number" for="Monto">Bs</label>
+      <input type="number" id="Monto" step="0.1">
+      <label for="Descripcion">Descripcion</label>
+      <input type="text" id="Descripcion">    
+      <button type="submit">Registro Egreso</button>               
+    </form>
+
+    <form id="form-Ingreso">                    
+      <label for="Tipo-transaccion" >Ingreso: </label>    
+      <label type="number" for="MontoIngreso">Bs</label>
+      <input type="number" id="MontoIngreso" step="0.1">
+      <label for="DescripcionIngreso">Descripcion</label>
+      <input type="text" id="DescripcionIngreso">    
+      <button type="submit">Registro Ingreso</button>               
+    </form>    
+    <h2>Historial de transacciones</h2>
+    <div id="resultado-div"></div>
+    <script type="module" src="./src/presenter.js"></script>                    
+  </body>
+</html>
